@@ -1,0 +1,26 @@
+.navbar {
+    flex-direction: column;
+}
+#home h4 {
+    font-size: 1.2175rem;
+    padding: 4px 0px 0px 0px;
+}
+#home h1{
+    font-size: 1.1rem;
+}
+#home p{
+    font-size:1rem ;
+}
+#home span{
+    font-size: 1.3rem;
+}
+#navbar ul li{
+    font-size: .8rem;
+}
+#navbar ul li a{
+    padding: 17px 10px;
+}
+#home .btn {
+    padding: 6px 9px;
+    font-size: .8rem;
+}

@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="./asserts/js/dashboard.js"></script>
+    <link rel="stylesheet" href="./asserts/css/blog.css">
+    <link rel="stylesheet" href="./asserts/css/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+    <div class="overlay" id="overlayID" onclick="menuClick()"></div>
+    <div class="container-fluid">
+        <div class="wrapper row">
+            <div class="sidebar" id="sidebar">
+                <ul>
+                    <div class="Dashboard">
+                        <h2>SB ADMIN</h2>
+                    </div>
+                    <hr class="sidebar-divider">
+                    <div class="sidebar-heading">Personal info</div>
+                    <div class="side-item">
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="blog.html">blog</a></li>
+                    </div>
+                    <hr class="sidebar-divider">
+                    <div class="sidebar-heading">INTERFACE</div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="sidebar-item">
+                            <li><a href="#" class="side-item collapsed" aria-expanded="true"
+                                    aria-controls="collapse-components" data-toggle="collapse"
+                                    data-target="#collapse-components">Components</a>
+                            </li>
+                            <div id="collapse-components" class="collapse" data-parent="#accordionExample">
+                                <h6 class="collapse-header">CUSTOM COMPONENTS:</h6>
+                                <li><a href="#" class="collapse-item">Buttons</a></li>
+                                <li><a href="#" class="collapse-item">Cards</a></li>
+                            </div>
+                        </div>
+                        <div class="sidebar-item">
+                            <li><a href="#" class="side-item collapsed" data-toggle="collapse"
+                                    data-target="#collapse-utilities">Utilities</a>
+                            </li>
+                            <div id="collapse-utilities" class="collapse" data-parent="#accordionExample">
+                                <h6 class="collapse-header">CUSTOM UTILITIES:</h6>
+                                <li><a href="#" class="collapse-item">Colors</a></li>
+                                <li><a href="#" class="collapse-item">Borders</a></li>
+                                <li><a href="#" class="collapse-item">Animationss</a></li>
+                                <li><a href="#" class="collapse-item">Others</a></li>
+                            </div>
+                        </div>
+                        <hr class="sidebar-divider">
+                        <div class="sidebar-heading">ADDONS</div>
+                        <div class="sidebar-item">
+                            <li><a href="#" class="side-item" data-toggle="collapse"
+                                    data-target="#collapse-pages">Pages</a></li>
+                            <div id="collapse-pages" class="collapse" data-parent="#accordionExample">
+                                <h6 class="collapse-header">LOGIN SCREENS:</h6>
+                                <li><a href="#" class="collapse-item">Login</a></li>
+                                <li><a href="#" class="collapse-item">Register</a></li>
+                                <li><a href="#" class="collapse-item">Forget Password</a></li>
+                            </div>
+                            <li><a href="#" class="side-item"></a>Charts</li>
+                            <li><a href="#" class="side-item"></a>Tables</li>
+                        </div>
+                    </div>
+                    <hr class="sidebar-divider">
+                </ul>
+            </div>
+            <div class="content" style="width: 100%">
+                <nav class="navbar shadow">
+                    <i onclick="menuClick()" class="fa fa-bars pt-2 pr-2" style="color:white;"></i>
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="logo">
+                            <a href="#" class="item collapsed" aria-expanded="true" aria-controls="collapse-components"
+                                data-toggle="collapse" data-target="#collapse-components"><img src="./asserts/images/logo.jpg" alt="logo"></a>
+                            <div id="collapse-components" class="collapse" data-parent="#accordionExample">
+                                <div class="user">
+                                    <!-- <div class="card"> -->
+                                    <!-- <div class="card-body"> -->
+                                    <h4>Praneeth Kumar Reddy</h4>
+                                    <p>Profile</p>
+                                    <hr>
+                                    <li><a href="/dashboard/dashboard.html" target="_blank" class="collapse-item">Dashboard</a></li>
+                                    <li><a href="#" class="collapse-item">Settings</a></li>
+                                    <!-- </div> -->
+                                    <!-- </div> -->
+                                </div>
+                            </div>
+                        </div>
+                </nav>
+            <div class=" background">
+                <!-- <div class="card"> -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="card-body">
+                                <div class="profile" style="display: flex;">
+                                    <img src="./asserts/images/logo1.png" alt="logo">
+                                    <h4 style="padding-left:10px">Praneeth Kumar Reddy<p style="font-size:1.1rem">India</p>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <div class="col-xl-6">
+                            <div class="card-body">
+                                <div class="social">
+                                    <div class="sn" style="border-top-left-radius: 10px;">
+                                        <p>Followers</p>
+                                        <h1>2345<h1>
+                                    </div>
+                                    <div class="sn" style="border-top-right-radius: 10px;">
+                                        <p>Following</p>
+                                        <h1>345</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <div class="container">
+            <div class="row mt-3">
+                <div class="col-xl-4 col-lg-4">
+                    <div class="menu">
+                        <!-- <div class="col-xl-12"> -->
+                        <div class="card">
+                            <div class="card-body">
+                                Activity
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-xl-12 col-lg-12"> -->
+                        <div class="card">
+                            <div class="card-body">
+                                Experiences
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-xl-12 col-lg-12"> -->
+                        <div class="card">
+                            <div class="card-body">
+                                Education
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-xl-12 col-lg-12"> -->
+                        <div class="card">
+                            <div class="card-body">
+                                Send Invitation
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="social mt-5">
+                        <!-- <div class="col-xl-12 col-lg-12"> -->
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="./asserts/images/facebook.png" alt="facebook">
+                                Facebook
+                                <i class="fa-solid fa-toggle-on fa-lg"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-xl-12 col-lg-12"> -->
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="./asserts/images/youtube.png" alt="youtube">
+                                Youtube
+                                <i class="fa-solid fa-toggle-on fa-lg"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                        <!-- <div class="col-xl-12 col-lg-12"> -->
+                        <div class="card" style="background-color: #e2e6ed;">
+                            <div class="card-body">
+                                <img src="./asserts/images/twitter.png" alt="twitter">
+                                Twitter
+                                <i class="fa-solid fa-toggle-off fa-lg"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div class="activity mt-3 mb-3">
+                        <!-- <div class="col-xl-12 col-lg-12"> -->
+                        <div class="card" style="background-color: #e2e6ed;">
+                            <div class="card-body">
+                                Activity
+                                <i class="fa-solid fa-angle-right" style="float: right;"></i>
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="blog">
+                        <div class="card">
+                            <div class="card-body pb-0">
+                                <div class="profile" style="display: flex;">
+                                    <img src="./asserts/images/logo.jpg" alt="logo" style="padding-right:10px ;">
+                                    <h4>Praneeth Kumar Reddy<p>Yesterday | 12:10pm</p>
+                                    </h4>
+                                </div>
+                                <p style="margin-bottom: 0px;">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                                <div class="food">
+                                    <img src="./asserts/images/food.jpg" alt="food">
+                                    <hr>
+                                    <ul>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-thumbs-up pr-1"></i>like</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-brands fa-facebook-messenger pr-1"></i>comment</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-share-nodes pr-1"></i>share</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-body pb-0">
+                                <div class="profile" style="display: flex;">
+                                    <img src="./asserts/images/logo.jpg" alt="logo" style="padding-right:10px ;">
+                                    <h4>Praneeth Kumar Reddy<p>Yesterday | 12:10pm</p>
+                                    </h4>
+                                </div>
+                                <p style="margin-bottom: 0px;">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                                <div class="food">
+                                    <hr>
+                                    <ul>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-thumbs-up pr-1"></i>like</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-brands fa-facebook-messenger pr-1"></i>comment</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-share-nodes pr-1"></i>share</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="blog mb-4">
+                        <div class="card">
+                            <div class="card-body pb-0">
+                                <div class="profile" style="display: flex;">
+                                    <img src="./asserts/images/logo.jpg" alt="logo" style="padding-right:10px ;">
+                                    <h4>Praneeth Kumar Reddy<p>Yesterday | 12:10pm</p>
+                                    </h4>
+                                </div>
+                                <p style="margin-bottom: 0px;">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                                <div class="food">
+                                    <hr>
+                                    <ul>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-thumbs-up pr-1"></i>like</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-brands fa-facebook-messenger pr-1"></i>comment</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-share-nodes pr-1"></i>share</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-body pb-0">
+                                <div class="profile" style="display: flex;">
+                                    <img src="./asserts/images/logo.jpg" alt="logo" style="padding-right:10px ;">
+                                    <h4>Praneeth Kumar Reddy<p>Yesterday | 12:10pm</p>
+                                    </h4>
+                                </div>
+                                <p style="margin-bottom: 0px;">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                                <div class="food">
+                                    <hr>
+                                    <ul>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-thumbs-up pr-1"></i>like</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-brands fa-facebook-messenger pr-1"></i>comment</li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-share-nodes pr-1"></i>share</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog mt-4 mb-4">
+                        <div class="card">
+                            <div class="card-body pb-0">
+                                <div class="profile" style="display: flex;">
+                                    <img src="./asserts/images/logo.jpg" alt="logo" style="padding-right:10px ;">
+                                    <h4>Praneeth Kumar Reddy<p>Yesterday | 12:10pm</p>
+                                    </h4>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet.</p>
+                                <div class="food">
+                                    <hr>
+                                    <ul>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-thumbs-up pr-1"></i>like</li>
+                                        <li style="display:flex; align-items: center;"></i> </li>
+                                        <li style="display:flex; align-items: center;"><i class="fa-solid fa-share-nodes pr-1"></i>share</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="social">
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-facebook " style="padding: 10px 14px;"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-linkedin"></a>
+        </div>
+      </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

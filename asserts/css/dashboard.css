@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#overlayID {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 98;
+    display: none;
+}
+
+#sidebar {
+    display: none
+}
+
+.sidebar {
+    background-color: black;
+    height: 100%;
+    padding: 20px;
+    color: aliceblue;
+    position: fixed;
+    z-index: 99;
+    width: 200px
+}
+
+.sidebar .title h2 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.sidebar .sidebar-heading {
+    font-size: .7rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .4);
+}
+
+.sidebar .side-item {
+    padding: 0px 0px 0px 22px
+}
+
+.sidebar .sidebar-item li {
+    padding: 21px 0px 4px 0px;
+}
+
+
+.sidebar .side-item :visited {
+    color: white;
+}
+
+.sidebar a {
+    color: rgba(255, 255, 255, .8);
+}
+
+.sidebar li {
+    font-weight: 600;
+    font-size: .8rem;
+    padding: 8px;
+}
+
+.sidebar li a:hover {
+    color: white;
+}
+
+.sidebar .sidebar-divider {
+    color: white;
+}
+
+.sidebar .collapse {
+    background-color: white;
+    padding: 13px 0px 12px 16px;
+    margin-top: 15px;
+    margin-bottom: 11px;
+    border-radius: 5px;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.sidebar .collapse li:hover {
+    background-color: #eaecf4;
+    border-radius: 5px;
+}
+
+.sidebar .sidebar-item .collapse li {
+    padding: 7px 8px 7px 9px;
+    font-weight: 600;
+    font-size: .85rem;
+    margin: 5px 9px -3px 2px;
+}
+
+.sidebar .collapse li a {
+    color: #0000009e;
+}
+
+
+.sidebar .collapse-header {
+    font-weight: 800;
+    font-size: .65rem;
+    color: #b7b9cc;
+    padding-left: 8px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.sidebar .side-item[data-toggle=collapse]::after {
+    content: '\f107';
+}
+
+.sidebar .side-item.collapsed[data-toggle=collapse]::after {
+    content: '\f105';
+}
+
+.sidebar .side-item[data-toggle=collapse]::after {
+    font-family: 'Font Awesome 5 Free';
+    color: rgb(255, 255, 255);
+    float: right;
+}
+
+hr.sidebar-divider {
+    border-top: 1px solid rgba(255, 255, 255, .15);
+}
+
+.content .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+
+}
+
+.navbar input[type=text] {
+    padding: 3px;
+    /* margin-top: 8px; */
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.navbar .search-container button {
+    float: right;
+    padding: 3px 10px;
+    /* margin-top: 8px; */
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.navbar .search-container button:hover {
+    background: #ccc;
+}
+
+.navbar .logo {
+    margin: 2px 34px;
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px;
+    margin: 0px 23px;
+}
+
+.navbar .logo .collapse .user h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.navbar .logo .collapse .user p {
+    font-size: .8rem;
+}
+
+.navbar .logo .collapse {
+    list-style: none;
+    text-decoration: none;
+    line-height: 0px;
+    padding: 14px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.navbar .logo .collapse li {
+    text-decoration: none;
+    border-radius: 10px;
+    line-height: 30px;
+    color: black;
+}
+
+.navbar .logo .collapse li a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar .logo .collapse li a:hover {
+    color: crimson;
+    font-weight: 600;
+}
+
+
+.portfolio .card-body {
+    align-items: center;
+    padding-bottom: 9px;
+    padding-top: 24px;
+    padding-left: 23px;
+}
+
+.portfolio .card-body .text h5 {
+    font-weight: 600;
+}
+
+.portfolio .card-body .text li {
+    font-weight: 600;
+    font-size: .7rem;
+}
+
+.bars .card-body h3 {
+    font-weight: 600;
+    font-size: .8rem;
+    color: #858796;
+}
+
+.card-body .banner {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.card-body .banner img {
+    width: 20rem;
+}
+
+.card-body p {
+    font-weight: 600;
+    color: #858796;
+}
+
+.card-body a {
+    font-weight: 600;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
+}
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+.footer .social {
+    font-size: 1.2rem;
+}
+
+.footer .social .fa {
+    color: white;
+    background-color: crimson;
+    text-decoration: none;
+    margin: 0.5rem 1rem;
+    padding: 10px;
+    border: 2px solid crimson;
+    border-radius: 10px;
+}
+
+.footer .social .fa:hover {
+    color: crimson;
+    border: 2px solid crimson;
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+    .content .navbar .right {
+        flex-direction: column;
+        /* padding: 10px; */
+    }
+}
