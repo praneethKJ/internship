@@ -45,17 +45,22 @@
 #home .container .btn {
     background-color: crimson;
     border: 2px solid crimson;
+    font-size: 1.1rem;
 }
 #home .container .btn a {
     color: white;
 }
 
-#home .container .btn :hover {
+#home .container .btn:hover {
     background: none;
+    color: crimson;
+    border: 2px solid crimson;
 }
 #home .container .btn a:hover {
     color: crimson;
+    
 }
+
 
 section {
     padding: 100px 0;
