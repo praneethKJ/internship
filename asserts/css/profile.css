@@ -43,12 +43,12 @@
 }
 
 #home .container .btn {
-    background-color: rgba(0, 0, 0, 0.208);
+    background-color: crimson;
     color: white;
 }
 
 #home .container .btn :hover {
-    background-color: rgba(0, 0, 0, 0.522);
+    background-color: rgba(0, 0, 0, 0.208);
     color: crimson;
 }
 
