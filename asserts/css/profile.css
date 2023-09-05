@@ -44,11 +44,16 @@
 
 #home .container .btn {
     background-color: crimson;
+    border: 2px solid crimson;
+}
+#home .container .btn a {
     color: white;
 }
 
 #home .container .btn :hover {
-    background-color: rgba(0, 0, 0, 0.208);
+    background: none;
+}
+#home .container .btn a:hover {
     color: crimson;
 }
 
