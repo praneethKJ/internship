@@ -60,7 +60,13 @@
     color: crimson;
     
 }
+.content .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00000096;
 
+}
 
 section {
     padding: 100px 0;
@@ -538,6 +544,12 @@ section {
 
 }
 
+@media screen and (max-width: 500px) {
+    .navbar .logo img {
+        display: contents;
+    }
+
+}
 @media screen and (max-width: 393px) {
     #navbar ul li a {
         padding: 5px 6px;

@@ -134,7 +134,7 @@ hr.sidebar-divider {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #00000096;
 
 }
 
@@ -287,15 +287,12 @@ hr.sidebar-divider {
     background: none;
 }
 
+@media screen and (max-width: 500px) {
+    .navbar .logo img {
+        display: contents;
+    }
 
-
-
-
-
-
-
-
-
+}
 
 
 
