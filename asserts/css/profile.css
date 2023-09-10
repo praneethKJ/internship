@@ -302,7 +302,7 @@ section {
     margin-bottom: 0.2rem;
 }
 
-#contact .contact-form a {
+#contact .contact-form .btn {
     text-decoration: none;
     border: 2px solid crimson;
     padding: 5px 15px;
@@ -312,7 +312,7 @@ section {
     font-weight: 600;
 }
 
-#contact .contact-form a:hover {
+#contact .contact-form .btn:hover {
     background-color: white;
     color: crimson;
 }
