@@ -1,470 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Dashboard</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script src="./asserts/js/dashboard.js"></script>
-    <link rel="stylesheet" href="./asserts/css/dashboard.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+  <title>Dashboard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <body>
-    <div class="overlay" id="overlayID" onclick="menuClick()"></div>
-    <div class="container-fluid">
-      <div class="wrapper row">
-        <div class="sidebar" id="sidebar">
-          <ul>
-            <div class="Dashboard">
-              <h2>ADMIN</h2>
-            </div>
-            <hr class="sidebar-divider" />
-            <div class="sidebar-heading">Personal info</div>
-            <div class="side-item">
-              <li><a href="index.html">Profile</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="blog.html">blog</a></li>
-            </div>
-            <hr class="sidebar-divider" />
-            <div class="sidebar-heading">INTERFACE</div>
-            <div class="accordion" id="accordionExample">
-              <div class="sidebar-item">
-                <li>
-                  <a
-                    href="#"
-                    class="side-item collapsed"
-                    aria-expanded="true"
-                    aria-controls="collapse-components"
-                    data-toggle="collapse"
-                    data-target="#collapse-components"
-                    >Components</a
-                  >
-                </li>
-                <div
-                  id="collapse-components"
-                  class="collapse"
-                  data-parent="#accordionExample"
-                >
-                  <h6 class="collapse-header">CUSTOM COMPONENTS:</h6>
-                  <li><a href="#" class="collapse-item">Buttons</a></li>
-                  <li><a href="#" class="collapse-item">Cards</a></li>
-                </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet"
+    type="text/css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="./asserts/js/dashboard.js"></script>
+  <link rel="stylesheet" href="./asserts/css/dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="overlay" id="overlayID" onclick="menuClick()"></div>
+  <div class="container-fluid">
+    <div class="wrapper row">
+      <div class="sidebar" id="sidebar">
+        <ul>
+          <div class="Dashboard">
+            <h2>ADMIN</h2>
+          </div>
+          <hr class="sidebar-divider" />
+          <div class="sidebar-heading">Personal info</div>
+          <div class="side-item">
+            <li><a href="index.html">Profile</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="blog.html">blog</a></li>
+          </div>
+          <hr class="sidebar-divider" />
+          <div class="sidebar-heading">INTERFACE</div>
+          <div class="accordion" id="accordionExample">
+            <div class="sidebar-item">
+              <li>
+                <a href="#" class="side-item collapsed" aria-expanded="true" aria-controls="collapse-components"
+                  data-toggle="collapse" data-target="#collapse-components">Components</a>
+              </li>
+              <div id="collapse-components" class="collapse" data-parent="#accordionExample">
+                <h6 class="collapse-header">CUSTOM COMPONENTS:</h6>
+                <li><a href="#" class="collapse-item">Buttons</a></li>
+                <li><a href="#" class="collapse-item">Cards</a></li>
               </div>
-              <div class="sidebar-item">
-                <li>
-                  <a
-                    href="#"
-                    class="side-item collapsed"
-                    data-toggle="collapse"
-                    data-target="#collapse-utilities"
-                    >Utilities</a
-                  >
-                </li>
-                <div
-                  id="collapse-utilities"
-                  class="collapse"
-                  data-parent="#accordionExample"
-                >
-                  <h6 class="collapse-header">CUSTOM UTILITIES:</h6>
-                  <li><a href="#" class="collapse-item">Colors</a></li>
-                  <li><a href="#" class="collapse-item">Borders</a></li>
-                  <li><a href="#" class="collapse-item">Animationss</a></li>
-                  <li><a href="#" class="collapse-item">Others</a></li>
-                </div>
-              </div>
-              <hr class="sidebar-divider" />
-              <div class="sidebar-heading">ADDONS</div>
-              <div class="sidebar-item">
-                <li>
-                  <a
-                    href="#"
-                    class="side-item"
-                    data-toggle="collapse"
-                    data-target="#collapse-pages"
-                    >Pages</a
-                  >
-                </li>
-                <div
-                  id="collapse-pages"
-                  class="collapse"
-                  data-parent="#accordionExample"
-                >
-                  <h6 class="collapse-header">LOGIN SCREENS:</h6>
-                  <li><a href="#" class="collapse-item">Login</a></li>
-                  <li><a href="#" class="collapse-item">Register</a></li>
-                  <li><a href="#" class="collapse-item">Forget Password</a></li>
-                </div>
-                <li><a href="#" class="side-item"></a>Charts</li>
-                <li><a href="#" class="side-item"></a>Tables</li>
+            </div>
+            <div class="sidebar-item">
+              <li>
+                <a href="#" class="side-item collapsed" data-toggle="collapse"
+                  data-target="#collapse-utilities">Utilities</a>
+              </li>
+              <div id="collapse-utilities" class="collapse" data-parent="#accordionExample">
+                <h6 class="collapse-header">CUSTOM UTILITIES:</h6>
+                <li><a href="#" class="collapse-item">Colors</a></li>
+                <li><a href="#" class="collapse-item">Borders</a></li>
+                <li><a href="#" class="collapse-item">Animationss</a></li>
+                <li><a href="#" class="collapse-item">Others</a></li>
               </div>
             </div>
             <hr class="sidebar-divider" />
-          </ul>
-        </div>
-        <div class="content" style="width: 100%">
-          <nav class="navbar shadow" style="background-color: black;">
-            <i
-              onclick="menuClick()"
-              class="fa fa-bars pt-2 pr-2"
-              style="color: white"
-            ></i>
-            <div class="search-container">
-              <form action="./action_page.php">
-                <input type="text" placeholder="Search.." name="search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
+            <div class="sidebar-heading">ADDONS</div>
+            <div class="sidebar-item">
+              <li>
+                <a href="#" class="side-item" data-toggle="collapse" data-target="#collapse-pages">Pages</a>
+              </li>
+              <div id="collapse-pages" class="collapse" data-parent="#accordionExample">
+                <h6 class="collapse-header">LOGIN SCREENS:</h6>
+                <li><a href="#" class="collapse-item">Login</a></li>
+                <li><a href="#" class="collapse-item">Register</a></li>
+                <li><a href="#" class="collapse-item">Forget Password</a></li>
+              </div>
+              <li><a href="#" class="side-item"></a>Charts</li>
+              <li><a href="#" class="side-item"></a>Tables</li>
             </div>
-            <div class="accordion" id="accordionExample">
-              <div class="logo">
-                <a
-                  href="#"
-                  class="item collapsed"
-                  aria-expanded="true"
-                  aria-controls="collapse-components"
-                  data-toggle="collapse"
-                  data-target="#collapse-components"
-                  ><img src="./asserts/images/logo.jpg" alt="logo"
-                /></a>
-                <div
-                  id="collapse-components"
-                  class="collapse"
-                  data-parent="#accordionExample"
-                >
-                  <div class="user">
-                    <!-- <div class="card"> -->
-                    <!-- <div class="card-body"> -->
-                    <h4>Praneeth Kumar Reddy</h4>
-                    <p>Profile</p>
-                    <hr />
-                    <li>
-                      <a
-                        href="/dashboard/dashboard.html"
-                        target="_blank"
-                        class="collapse-item"
-                        >Dashboard</a
-                      >
-                    </li>
-                    <li><a href="#" class="collapse-item">Settings</a></li>
-                    <!-- </div> -->
-                    <!-- </div> -->
-                  </div>
+          </div>
+          <hr class="sidebar-divider" />
+        </ul>
+      </div>
+      <div class="content" style="width: 100%">
+        <nav class="navbar shadow" style="background-color: black;">
+          <i onclick="menuClick()" class="fa fa-bars pt-2 pr-2" style="color: white"></i>
+          <div class="search-container">
+            <form action="./action_page.php">
+              <input type="text" placeholder="Search.." name="search" />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="logo">
+              <a href="#" class="item collapsed" aria-expanded="true" aria-controls="collapse-components"
+                data-toggle="collapse" data-target="#collapse-components"><img src="./asserts/images/logo.jpg"
+                  alt="logo" /></a>
+              <div id="collapse-components" class="collapse" data-parent="#accordionExample">
+                <div class="user">
+                  <!-- <div class="card"> -->
+                  <!-- <div class="card-body"> -->
+                  <h4>Praneeth Kumar Reddy</h4>
+                  <p>Profile</p>
+                  <hr />
+                  <li>
+                    <a href="/dashboard/dashboard.html" target="_blank" class="collapse-item">Dashboard</a>
+                  </li>
+                  <li><a href="#" class="collapse-item">Settings</a></li>
+                  <!-- </div> -->
+                  <!-- </div> -->
                 </div>
               </div>
             </div>
-          </nav>
-          <div class="container-fluid">
-            <h4>Dashboard</h4>
-            <div class="row portfolio">
-              <div class="col-xl-3 col-md-6 mb-4 mt-3">
-                <div
-                  class="card border-left-primary shadow h-100"
-                  style="border-left: 3.5px solid #4e73df"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <div class="text">
-                        <li class="text-primary">
-                          EARNINGS (MONTHLY)
-                          <span
-                            ><a href="#" style="width: 30px; float: right"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"
-                              >
-                                <path
-                                  d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z"
-                                /></svg></a
-                          ></span>
-                        </li>
-                        <h5>$40,000</h5>
-                      </div>
-                    </ul>
+          </div>
+        </nav>
+        <div class="container-fluid">
+          <h4>Dashboard</h4>
+          <div class="row portfolio">
+            <div class="col-xl-3 col-md-6 mb-4 mt-3">
+              <div class="card border-left-primary shadow h-100" style="border-left: 3.5px solid #4e73df">
+                <div class="card-body">
+                  <ul>
+                    <div class="text">
+                      <li class="text-primary">
+                        EARNINGS (MONTHLY)
+                        <span><a href="#" style="width: 30px; float: right"><svg xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 448 512">
+                              <path
+                                d="M96 32C96 14.33 110.3 0 128 0C145.7 0 160 14.33 160 32V64H288V32C288 14.33 302.3 0 320 0C337.7 0 352 14.33 352 32V64H400C426.5 64 448 85.49 448 112V160H0V112C0 85.49 21.49 64 48 64H96V32zM448 464C448 490.5 426.5 512 400 512H48C21.49 512 0 490.5 0 464V192H448V464z" />
+                            </svg></a></span>
+                      </li>
+                      <h5>$40,000</h5>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4 mt-3">
+              <div class="card border-left-primary shadow h-100" style="border-left: 3.5px solid #1cc88a">
+                <div class="card-body">
+                  <ul>
+                    <div class="text">
+                      <li class="text-success">
+                        EARNINGS (ANNUAL)
+                        <span><a href="#" style="width: 20px; float: right"><svg xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 320 512">
+                              <path
+                                d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z" />
+                            </svg></a></span>
+                      </li>
+                      <h5>$215,000</h5>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4 mt-3">
+              <div class="card border-left-primary shadow h-100" style="border-left: 3.5px solid #36b9cc">
+                <div class="card-body">
+                  <ul>
+                    <div class="text">
+                      <li class="text-info">
+                        TASKS
+                        <span><a href="#" style="width: 25px; float: right"><svg xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 384 512">
+                              <path
+                                d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM272 224h-160C103.2 224 96 216.8 96 208C96 199.2 103.2 192 112 192h160C280.8 192 288 199.2 288 208S280.8 224 272 224z" />
+                            </svg></a></span>
+                      </li>
+                      <h5>50%</h5>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4 mt-3">
+              <div class="card border-left-primary shadow" style="border-left: 3.5px solid #f6c23e">
+                <div class="card-body">
+                  <ul>
+                    <div class="text">
+                      <li class="text-warning">
+                        PENDING REQUESTS
+                        <span><a href="#" style="width: 35px; float: right"><svg xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 640 512">
+                              <path
+                                d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z" />
+                            </svg></a></span>
+                      </li>
+                      <h5>18</h5>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 mb-4 mt-3 bars">
+              <div class="card shadow">
+                <div class="card-header font-weight-bold text-primary">
+                  Projects
+                </div>
+                <div class="card-body">
+                  <h3>
+                    Server Migration<span class="float-right">20%</span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-danger" style="width: 20%"></div>
+                  </div>
+                  <br />
+                  <h3>Sales Tracking<span class="float-right">40%</span></h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 40%"></div>
+                  </div>
+                  <br />
+                  <h3>
+                    Customer Database <span class="float-right">60%</span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 60%"></div>
+                  </div>
+                  <br />
+                  <h3>Payout Details<span class="float-right">80%</span></h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-info" style="width: 80%"></div>
+                  </div>
+                  <br />
+                  <h3>
+                    Account Setup<span class="float-right">Complete!</span>
+                  </h3>
+                  <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 100%"></div>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-md-6 mb-4 mt-3">
-                <div
-                  class="card border-left-primary shadow h-100"
-                  style="border-left: 3.5px solid #1cc88a"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <div class="text">
-                        <li class="text-success">
-                          EARNINGS (ANNUAL)
-                          <span
-                            ><a href="#" style="width: 20px; float: right"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 320 512"
-                              >
-                                <path
-                                  d="M160 0C177.7 0 192 14.33 192 32V67.68C193.6 67.89 195.1 68.12 196.7 68.35C207.3 69.93 238.9 75.02 251.9 78.31C268.1 82.65 279.4 100.1 275 117.2C270.7 134.3 253.3 144.7 236.1 140.4C226.8 137.1 198.5 133.3 187.3 131.7C155.2 126.9 127.7 129.3 108.8 136.5C90.52 143.5 82.93 153.4 80.92 164.5C78.98 175.2 80.45 181.3 82.21 185.1C84.1 189.1 87.79 193.6 95.14 198.5C111.4 209.2 136.2 216.4 168.4 225.1L171.2 225.9C199.6 233.6 234.4 243.1 260.2 260.2C274.3 269.6 287.6 282.3 295.8 299.9C304.1 317.7 305.9 337.7 302.1 358.1C295.1 397 268.1 422.4 236.4 435.6C222.8 441.2 207.8 444.8 192 446.6V480C192 497.7 177.7 512 160 512C142.3 512 128 497.7 128 480V445.1C127.6 445.1 127.1 444.1 126.7 444.9L126.5 444.9C102.2 441.1 62.07 430.6 35 418.6C18.85 411.4 11.58 392.5 18.76 376.3C25.94 360.2 44.85 352.9 60.1 360.1C81.9 369.4 116.3 378.5 136.2 381.6C168.2 386.4 194.5 383.6 212.3 376.4C229.2 369.5 236.9 359.5 239.1 347.5C241 336.8 239.6 330.7 237.8 326.9C235.9 322.9 232.2 318.4 224.9 313.5C208.6 302.8 183.8 295.6 151.6 286.9L148.8 286.1C120.4 278.4 85.58 268.9 59.76 251.8C45.65 242.4 32.43 229.7 24.22 212.1C15.89 194.3 14.08 174.3 17.95 153C25.03 114.1 53.05 89.29 85.96 76.73C98.98 71.76 113.1 68.49 128 66.73V32C128 14.33 142.3 0 160 0V0z"
-                                /></svg></a
-                          ></span>
-                        </li>
-                        <h5>$215,000</h5>
+              <div class="row">
+                <div class="col-lg-6 mb-4 mt-4">
+                  <div class="card bg-primary text-white shadow">
+                    <div class="card-body font-weight-bold">
+                      Primary
+                      <div class="text-white-50 small font-weight-bold">
+                        #4e73df
                       </div>
-                    </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-xl-3 col-md-6 mb-4 mt-3">
-                <div
-                  class="card border-left-primary shadow h-100"
-                  style="border-left: 3.5px solid #36b9cc"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <div class="text">
-                        <li class="text-info">
-                          TASKS
-                          <span
-                            ><a href="#" style="width: 25px; float: right"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 384 512"
-                              >
-                                <path
-                                  d="M336 64h-53.88C268.9 26.8 233.7 0 192 0S115.1 26.8 101.9 64H48C21.5 64 0 85.48 0 112v352C0 490.5 21.5 512 48 512h288c26.5 0 48-21.48 48-48v-352C384 85.48 362.5 64 336 64zM192 64c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S160 113.7 160 96C160 78.33 174.3 64 192 64zM272 224h-160C103.2 224 96 216.8 96 208C96 199.2 103.2 192 112 192h160C280.8 192 288 199.2 288 208S280.8 224 272 224z"
-                                /></svg></a
-                          ></span>
-                        </li>
-                        <h5>50%</h5>
+                <div class="col-lg-6 mb-4 mt-4">
+                  <div class="card bg-success text-white shadow">
+                    <div class="card-body font-weight-bold">
+                      Success
+                      <div class="text-white-50 small font-weight-bold">
+                        #1cc88a
                       </div>
-                    </ul>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-xl-3 col-md-6 mb-4 mt-3">
-                <div
-                  class="card border-left-primary shadow"
-                  style="border-left: 3.5px solid #f6c23e"
-                >
-                  <div class="card-body">
-                    <ul>
-                      <div class="text">
-                        <li class="text-warning">
-                          PENDING REQUESTS
-                          <span
-                            ><a href="#" style="width: 35px; float: right"
-                              ><svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 512"
-                              >
-                                <path
-                                  d="M416 176C416 78.8 322.9 0 208 0S0 78.8 0 176c0 39.57 15.62 75.96 41.67 105.4c-16.39 32.76-39.23 57.32-39.59 57.68c-2.1 2.205-2.67 5.475-1.441 8.354C1.9 350.3 4.602 352 7.66 352c38.35 0 70.76-11.12 95.74-24.04C134.2 343.1 169.8 352 208 352C322.9 352 416 273.2 416 176zM599.6 443.7C624.8 413.9 640 376.6 640 336C640 238.8 554 160 448 160c-.3145 0-.6191 .041-.9336 .043C447.5 165.3 448 170.6 448 176c0 98.62-79.68 181.2-186.1 202.5C282.7 455.1 357.1 512 448 512c33.69 0 65.32-8.008 92.85-21.98C565.2 502 596.1 512 632.3 512c3.059 0 5.76-1.725 7.02-4.605c1.229-2.879 .6582-6.148-1.441-8.354C637.6 498.7 615.9 475.3 599.6 443.7z"
-                                /></svg></a
-                          ></span>
-                        </li>
-                        <h5>18</h5>
+                <div class="col-lg-6 mb-4">
+                  <div class="card text-white shadow bg-info">
+                    <div class="card-body font-weight-bold">
+                      Info
+                      <div class="text-white-50 small font-weight-bold">
+                        #36b9cc
                       </div>
-                    </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card text-white shadow bg-warning">
+                    <div class="card-body font-weight-bold">
+                      Warning
+                      <div class="text-white-50 small font-weight-bold">
+                        #f6c23e
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card text-white shadow bg-danger">
+                    <div class="card-body font-weight-bold">
+                      Danger
+                      <div class="text-white-50 small font-weight-bold">
+                        #e74a3b
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card text-white shadow bg-secondary">
+                    <div class="card-body font-weight-bold">
+                      secondary
+                      <div class="text-white-50 small font-weight-bold">
+                        #858796
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card text-gray shadow bg-light">
+                    <div class="card-body font-weight-bold">
+                      light
+                      <div class="text-gray-50 small font-weight-bold">
+                        #f8f9fc
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                  <div class="card text-white shadow bg-dark">
+                    <div class="card-body font-weight-bold">
+                      dark
+                      <div class="text-white-50 small font-weight-bold">
+                        #5a5c69
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-6 mb-4 mt-3 bars">
-                <div class="card shadow">
-                  <div class="card-header font-weight-bold text-primary">
-                    Projects
-                  </div>
-                  <div class="card-body">
-                    <h3>
-                      Server Migration<span class="float-right">20%</span>
-                    </h3>
-                    <div class="progress">
-                      <div
-                        class="progress-bar bg-danger"
-                        style="width: 20%"
-                      ></div>
-                    </div>
-                    <br />
-                    <h3>Sales Tracking<span class="float-right">40%</span></h3>
-                    <div class="progress">
-                      <div
-                        class="progress-bar bg-warning"
-                        style="width: 40%"
-                      ></div>
-                    </div>
-                    <br />
-                    <h3>
-                      Customer Database <span class="float-right">60%</span>
-                    </h3>
-                    <div class="progress">
-                      <div class="progress-bar" style="width: 60%"></div>
-                    </div>
-                    <br />
-                    <h3>Payout Details<span class="float-right">80%</span></h3>
-                    <div class="progress">
-                      <div
-                        class="progress-bar bg-info"
-                        style="width: 80%"
-                      ></div>
-                    </div>
-                    <br />
-                    <h3>
-                      Account Setup<span class="float-right">Complete!</span>
-                    </h3>
-                    <div class="progress">
-                      <div
-                        class="progress-bar bg-success"
-                        style="width: 100%"
-                      ></div>
-                    </div>
-                  </div>
+            <div class="col-lg-6 mb-4 mt-3">
+              <div class="card shadow">
+                <div class="card-header font-weight-bold text-primary">
+                  Illustrations
                 </div>
-                <div class="row">
-                  <div class="col-lg-6 mb-4 mt-4">
-                    <div class="card bg-primary text-white shadow">
-                      <div class="card-body font-weight-bold">
-                        Primary
-                        <div class="text-white-50 small font-weight-bold">
-                          #4e73df
-                        </div>
-                      </div>
-                    </div>
+                <div class="card-body">
+                  <div class="banner">
+                    <img src="./asserts/images/img-removebg.png" alt="image" />
                   </div>
-                  <div class="col-lg-6 mb-4 mt-4">
-                    <div class="card bg-success text-white shadow">
-                      <div class="card-body font-weight-bold">
-                        Success
-                        <div class="text-white-50 small font-weight-bold">
-                          #1cc88a
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-4">
-                    <div class="card text-white shadow bg-info">
-                      <div class="card-body font-weight-bold">
-                        Info
-                        <div class="text-white-50 small font-weight-bold">
-                          #36b9cc
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-4">
-                    <div class="card text-white shadow bg-warning">
-                      <div class="card-body font-weight-bold">
-                        Warning
-                        <div class="text-white-50 small font-weight-bold">
-                          #f6c23e
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-4">
-                    <div class="card text-white shadow bg-danger">
-                      <div class="card-body font-weight-bold">
-                        Danger
-                        <div class="text-white-50 small font-weight-bold">
-                          #e74a3b
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-4">
-                    <div class="card text-white shadow bg-secondary">
-                      <div class="card-body font-weight-bold">
-                        secondary
-                        <div class="text-white-50 small font-weight-bold">
-                          #858796
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-4">
-                    <div class="card text-gray shadow bg-light">
-                      <div class="card-body font-weight-bold">
-                        light
-                        <div class="text-gray-50 small font-weight-bold">
-                          #f8f9fc
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 mb-4">
-                    <div class="card text-white shadow bg-dark">
-                      <div class="card-body font-weight-bold">
-                        dark
-                        <div class="text-white-50 small font-weight-bold">
-                          #5a5c69
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <p class="mt-4">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Reiciendis odit cumque voluptatem et, ipsa non, vel
+                    distinctio laudantium cum praesentium eius fugiat aliquam
+                  </p>
+                  <a href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_progressbar3&stacked=h"
+                    target="_blank">Click Here</a>
                 </div>
               </div>
-              <div class="col-lg-6 mb-4 mt-3">
-                <div class="card shadow">
-                  <div class="card-header font-weight-bold text-primary">
-                    Illustrations
-                  </div>
-                  <div class="card-body">
-                    <div class="banner">
-                      <img
-                        src="./asserts/images/img-removebg.png"
-                        alt="image"
-                      />
-                    </div>
-                    <p class="mt-4">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Reiciendis odit cumque voluptatem et, ipsa non, vel
-                      distinctio laudantium cum praesentium eius fugiat aliquam
-                    </p>
-                    <a
-                      href="https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_progressbar3&stacked=h"
-                      target="_blank"
-                      >Click Here</a
-                    >
-                  </div>
+              <div class="card shadow mb-4 mt-3">
+                <div class="card-header text-primary font-weight-bold">
+                  Development Approach
                 </div>
-                <div class="card shadow mb-4 mt-3">
-                  <div class="card-header text-primary font-weight-bold">
-                    Development Approach
-                  </div>
-                  <div
-                    class="card body px-3 font-weight-bold"
-                    style="color: #858796"
-                    ;
-                  >
-                    <p class="mt-4">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Vitae iure facere fugit id impedit corrupti nostrum dolor
-                      placeat voluptatem. Nesciunt nam perspiciatis recusandae
-                      optio porro doloremque? Illo tenetur quaerat inventore!
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Veritatis impedit nulla maiores quam beatae ea laboriosam
-                      dignissimos cupiditate illo placeat! Porro facere
-                      doloribus cumque accusamus est eligendi a laudantium
-                      animi?
-                    </p>
-                  </div>
+                <div class="card body px-3 font-weight-bold" style="color: #858796" ;>
+                  <p class="mt-4">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vitae iure facere fugit id impedit corrupti nostrum dolor
+                    placeat voluptatem. Nesciunt nam perspiciatis recusandae
+                    optio porro doloremque? Illo tenetur quaerat inventore!
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veritatis impedit nulla maiores quam beatae ea laboriosam
+                    dignissimos cupiditate illo placeat! Porro facere
+                    doloribus cumque accusamus est eligendi a laudantium
+                    animi?
+                  </p>
                 </div>
               </div>
             </div>
@@ -472,31 +356,29 @@
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="social">
-        <a href="https://www.instagram.com/praneeth_kj/" target="_blank" class="fa fa-instagram" ></a>
-        <a href="https://www.facebook.com/profile.php?id=100013316345705" target="_blank" class="fa fa-facebook " style="padding: 10px 14px;"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="https://www.linkedin.com/in/praneeth-kumar-reddy-kodadala-a87028287" target="_blank" class="fa fa-linkedin"></a>
+  </div>
+  <footer class="footer">
+    <div class="social">
+      <a href="https://www.instagram.com/praneeth_kj/" target="_blank" class="fa fa-instagram"></a>
+      <a href="https://www.facebook.com/profile.php?id=100013316345705" target="_blank" class="fa fa-facebook "
+        style="padding: 10px 14px;"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="https://www.linkedin.com/in/praneeth-kumar-reddy-kodadala-a87028287" target="_blank"
+        class="fa fa-linkedin"></a>
     </div>
-    </footer>
+  </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
