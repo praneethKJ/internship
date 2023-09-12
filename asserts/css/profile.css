@@ -124,6 +124,7 @@ section {
 
 #about .container .image img {
     width: 60%;
+    margin: 0px 77px;
 }
 
 #about .content .text {
@@ -492,8 +493,8 @@ section {
     #home .container .text-3 {
         font-size: 2.1rem;
     }
-    #about .container .image {
-        width: 50%;
+    #about .container .image img{
+       margin: auto;
     }
     
     #about .container .content {
