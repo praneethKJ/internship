@@ -114,7 +114,8 @@
                     <div class="container">
                         <div class="text-1">Hello, my name is</div>
                         <div class="text-2">K J Praneeth Kumar Reddy</div>
-                        <div class="text-3">And I'm a <span>Developer</span></div>
+                        <div class="text-3">And I'm a <span id="element"></span>
+                        </div>
                         <button class="btn"><a href="https://github.com/praneethKJ?tab=repositories" target="_blank">MY
                                 Works</a></button>
                     </div>
@@ -159,7 +160,10 @@
                                         </div> -->
                                     <div class="content">
                                         <!-- <div class="text">I'am Praneeth Kumar Reddy</div> -->
-                                        <p>I learned several languages during my undergraduate studies, including C/C++, java, python, HTML, CSS, and javascript. I am familiar with all of them, and here I'm listing some of my skills that I hope to improve and add to as I continue on my coding adventure.</p>
+                                        <p>I learned several languages during my undergraduate studies, including C/C++,
+                                            java, python, HTML, CSS, and javascript. I am familiar with all of them, and
+                                            here I'm listing some of my skills that I hope to improve and add to as I
+                                            continue on my coding adventure.</p>
                                         <button class="btn"><a href="#">Check Me</a></button>
                                     </div>
                                 </div>
@@ -280,7 +284,16 @@
                 class="fa fa-linkedin"></a>
         </div>
     </footer>
-
+    <!-- js for typed script-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Engineer', '&amp; Web Designer'],
+            typeSpeed: 50,
+            loop:true,
+            backSpeed:40,
+        });
+    </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
